@@ -17,16 +17,16 @@ public class Main {
     public static void main(String[] args) {
 
         Pupil pupil = new Pupil("Ivanoff");
-        System.out.println(pupil.relax());
+        System.out.println(pupil.getName()+pupil.write());
 
         BadPupil badPupil = new BadPupil("Petroff");
-        System.out.println(badPupil.study());
+        System.out.println(badPupil.getName()+badPupil.relax());
 
         GoodPupil goodPupil = new GoodPupil("Sidoroff");
-        System.out.println(goodPupil.study());
+        System.out.println(goodPupil.getName()+goodPupil.read());
 
         ExcelentPupil excelentPupil = new ExcelentPupil("Medoff");
-        System.out.println(excelentPupil.study());
+        System.out.println(excelentPupil.getName()+excelentPupil.study());
 
 
 

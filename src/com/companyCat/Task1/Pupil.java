@@ -8,19 +8,19 @@ public class Pupil
     private String name;
 
     String study() {
-        return this.name+" usually study "+characteristics;
+        return " usually study "+characteristics;
 
     }
     String read(){
-        return this.name+" usually read "+characteristics;
+        return " usually read "+characteristics;
 
     }
     String write(){
-        return this.name+" usually write "+characteristics;
+        return " usually write "+characteristics;
 
     }
     String relax(){
-        return this.name+" usually relax "+characteristics;
+        return " usually relax ";
 
     }
 
@@ -54,7 +54,7 @@ public class Pupil
     @Override
     public String toString() {
         return "Pupil{" +
-                "name='" + name + '\''+" mark = " + characteristics +'\''+
+                "name='" + name + '\''+" mark = " + study() +'\''+ relax()+
                 '}';
     }
 

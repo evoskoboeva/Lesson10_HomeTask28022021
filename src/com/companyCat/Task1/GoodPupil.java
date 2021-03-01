@@ -16,7 +16,7 @@ public class GoodPupil extends Pupil {
     }
     @Override
     public String relax() {
-        return super.relax() + "so so";
+        return super.relax()+"so so" ;
     }
     @Override
     public String study() {
