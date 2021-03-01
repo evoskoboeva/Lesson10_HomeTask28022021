@@ -1,5 +1,6 @@
 package com.companyCat.Task3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -30,21 +31,21 @@ public class Main {
         String key = scanner.nextLine();
         if (key.equals("PRO")) {
             ProDocumentWorker proDocumentWorker = new ProDocumentWorker();
-            System.out.println(proDocumentWorker.OpenDocument());
-            System.out.println(proDocumentWorker.EditDocument());
-            System.out.println(proDocumentWorker.SaveDocument());
+            for (String s : Arrays.asList(proDocumentWorker.OpenDocument(), proDocumentWorker.EditDocument(), proDocumentWorker.SaveDocument())) {
+                System.out.println(s);
+            }
         }
         else if (key.equals("EX")){
             ExpertDocumentWorker expertDocumentWorker = new ExpertDocumentWorker();
-            System.out.println(expertDocumentWorker.OpenDocument());
-            System.out.println(expertDocumentWorker.EditDocument());
-            System.out.println(expertDocumentWorker.SaveDocument());
+            for (String s : Arrays.asList(expertDocumentWorker.OpenDocument(), expertDocumentWorker.EditDocument(), expertDocumentWorker.SaveDocument())) {
+                System.out.println(s);
+            }
         }
         else {
             DocumentWorker documentWorker = new DocumentWorker();
-            System.out.println(documentWorker.OpenDocument());
-            System.out.println(documentWorker.EditDocument());
-            System.out.println(documentWorker.SaveDocument());
+            for (String s : Arrays.asList(documentWorker.OpenDocument(), documentWorker.EditDocument(), documentWorker.SaveDocument())) {
+                System.out.println(s);
+            }
 
         }
     }
